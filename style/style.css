@@ -6,7 +6,7 @@ body {
   min-height: 100vh;
   overflow: hidden;
   font-family: Arial, sans-serif;
-  animation: changeGradient 20s linear infinite;
+  animation: changeGradient 5s linear infinite;
 }
 
 @keyframes changeGradient {
@@ -23,11 +23,17 @@ body {
   75% {
     background: linear-gradient(to right, #832eb0, #502658);
   }
-  12.5%,
-  37.5%,
-  62.5%,
-  87.5% {
+  12.5%{
     background: linear-gradient(to right, #502658, #832eb0);
+  }
+  37.5%{
+    background: linear-gradient(to right, #832eb0, #502658);
+  }
+  62.5%{
+    background: linear-gradient(to right, #502658, #832eb0);
+  }
+  87.5% {
+    background: linear-gradient(to right, #832eb0, #502658);
   }
 }
 
