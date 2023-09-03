@@ -1,53 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>UniFlix - Coming Soon</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="./style/style.css" />
+    <script src="./js/main.js" defer></script>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>UniFlix - Coming Soon</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="./style/style.css">
-  <script src="./js/main.js" defer></script>
-
-</head>
-
-<body>
-  <section id="home">
-    <section class="wrapper">
-      <header>
-        <h1 class="logo"><a href="">Uniflix.</a></h1>
-        <div class="search-box">
-          <div class="icon">
-            <img src="./assets/svg/magnifying-glass-solid (1).svg" alt="" class="image"/>
+  <body>
+    <section id="home">
+      <section class="wrapper">
+        <header>
+          <h1 class="logo"><a href="">Uniflix.</a></h1>
+          <div class="search-box">
+            <div class="icon">
+              <img
+                src="./assets/svg/magnifying-glass-solid (1).svg"
+                alt=""
+                class="image"
+              />
+            </div>
+            <input
+              type="text"
+              name=""
+              id=""
+              placeholder="Search your movies and Multiplexes..."
+            />
           </div>
-          <input type="text" name="" id="" placeholder="Search your movies and Multiplexes...">
-        </div>
-        <div class="social-media">
-          <div><img src="./assets/svg/instagram.svg" alt="" class="image"></div>
-          <div><img src="./assets/svg/facebook.svg" alt="" class="image"></div>
-          <div><img src="./assets/svg/x-twitter.svg" alt="" class="image"></div>
-        </div>
-      </header>
-      <div class="spotlight">
-        <div class="left">
-          <div class="menu">
-            <ul>
-              <li class="menu-item">Home</li>
-              <li class="menu-item">Trailers</li>
-              <li class="menu-item">Book Tickets</li>
-              <li class="menu-item">Contact Us</li>
-            </ul>
+          <div class="social-media">
+            <div>
+              <img src="./assets/svg/instagram.svg" alt="" class="image" />
+            </div>
+            <div>
+              <img src="./assets/svg/facebook.svg" alt="" class="image" />
+            </div>
+            <div>
+              <img src="./assets/svg/x-twitter.svg" alt="" class="image" />
+            </div>
+          </div>
+        </header>
+        <div class="spotlight">
+          <div class="left">
+            <div class="menu">
+              <ul>
+                <li class="menu-item">Home</li>
+                <li class="menu-item">Trailers</li>
+                <li class="menu-item">Multiplexes</li>
+                <li class="menu-item">Book Tickets</li>
+                <li class="menu-item">Contact Us</li>
+              </ul>
+            </div>
+          </div>
+          <div class="right">
+            <h1 class="title">The Best in the Week #3</h1>
+            <div class="poster">
+              <img
+                src="./assets/images/batman.jpeg"
+                alt=""
+                class="spotlight-poster-image"
+              />
+            </div>
+            <h1 class="movie-name">Batman</h1>
+            <span class="category">Action / Drama</span>
+            <p class="description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi
+              cumque et corrupti pariatur sit animi repellat doloremque impedit,
+              iure illum...
+            </p>
+            <div class="slider-dots">
+              <span class="dot"></span><span class="dot"></span
+              ><span class="dot active"></span><span class="dot"></span
+              ><span class="dot"></span>
+            </div>
           </div>
         </div>
-        <div class="right">
-          <div class="poster"><img src="./assets/images/batman.jpeg" alt="" class="spotlight-poster-image"></div>
-          <h1 class="movie-name"></h1>
-          <span class="category">Action</span>
-          <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi cumque et corrupti pariatur sit animi repellat doloremque impedit, iure illum.</p>
-        </div>
-      </div>
+      </section>
     </section>
-  </section>
-</body>
-
+  </body>
 </html>

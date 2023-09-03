@@ -54,6 +54,7 @@ select {
 }
 a {
   text-decoration: none;
+  cursor: pointer;
 }
 .wrapper {
   width: 90%;
@@ -64,9 +65,10 @@ a {
 /* style starts here */
 
 #home { 
-  background: rgb(2,0,36);
-  background: linear-gradient(135deg, rgba(2,0,36,1) 34%, rgba(179,6,49,1) 85%);
+  background: rgb(1,14,40);
+  background: linear-gradient(135deg, rgba(1,14,40,1) 18%, rgba(142,6,6,1) 94%);
   /* height: 100vh; */
+  padding-bottom: 5%;
 }
 
 #home header { 
@@ -89,7 +91,7 @@ a {
   display: flex;
   align-items: center;
   border-radius: 50px;
-  padding: 8px 20px 8px 10px;
+  padding: 10px 20px 10px 10px;
   border: 1px solid #f7f7f7;
   width: 25%;
 }
@@ -107,6 +109,7 @@ a {
   width: 100%;
   margin-left: 10px;
   color: #f7f7f7;
+  height: 100%;
 }
 #home header .social-media { 
   display: flex;
@@ -114,8 +117,8 @@ a {
 }
 
 #home header .social-media div{
-  width: 20px;
-  height : 20px;
+  width: 25px;
+  height : 25px;
   margin-left: 10px;
   cursor: pointer;
 }
@@ -126,6 +129,7 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-top: 5%;
 }
 
 #home .spotlight .left { 
@@ -143,18 +147,31 @@ a {
 #home .spotlight .left .menu ul .menu-item { 
     font-size: 20px;
     color: #f7f7f7;
-    margin-bottom: 15px;
+    margin-bottom: 35px;
+    cursor: pointer;
+}
+#home .spotlight .left .menu ul .menu-item:last-child{
+  margin-bottom: 0;
 }
 
 #home .spotlight .right { 
   width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+#home .spotlight .right .title{
+  font-size: 30px;
+  color: #f7f7f7; 
+  margin-bottom: 3%;
 }
 
 #home .spotlight .right .poster { 
-  width: 50%;
+  width: 85%;
   border: 2px solid #f7f7f7;
   border-radius: 20px;
   overflow: hidden;
+  margin-bottom: 2%;
 }
 
 #home .spotlight .right .poster .spotlight-poster-image { 
@@ -164,13 +181,41 @@ a {
 }
 
 #home .spotlight .right .movie-name { 
-
+  font-size: 40px;
+  color: #f7f7f7;
+  font-weight: bold;
 }
 
 #home .spotlight .right .category { 
-
+  font-size: 14px;
+  background: #f7f7f7;
+  border-radius: 50px;
+  padding: 5px 15px;
+  color: #2d2d2d;
+  margin: 3% 0 2%;
 }
 
 #home .spotlight .right .description { 
-
+  font-size: 15px;
+  color: #f7f7f7;
+  text-align: left;
+}
+#home .spotlight .right .slider-dots{
+  display: flex;
+  width: max-content;
+  margin: 0 auto;
+  margin-top: 8%;
+}
+#home .spotlight .right .slider-dots .dot{
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #cacaca;
+  margin-right: 10px;
+  cursor: pointer;
+}
+#home .spotlight .right .slider-dots .active{
+  background-color: #f7f7f7;
+  border-radius: 50px;
+  width: 20px;
 }
