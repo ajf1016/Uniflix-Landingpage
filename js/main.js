@@ -1,7 +1,7 @@
 console.log("ONLOADED")
 // get color from image
-const image = document.getElementById('image');
-const container = document.querySelector('.container');
+const image = document.querySelector('.spotlight-poster-image');
+const container = document.getElementById('home');
 
 image.onload = function() {
     const canvas = document.createElement('canvas');
@@ -15,7 +15,8 @@ image.onload = function() {
 
     const gradientColor = `rgba(${color.r}, ${color.g}, ${color.b}, 1)`;
 
-    container.style.background = `rgb(2, 0, 36) linear-gradient(135deg, rgba(2, 0, 36, 1) 34%, ${gradientColor} 85%)`;
+    // container.style.background = `rgb(2, 0, 36) linear-gradient(135deg, rgba(2, 0, 36, 1) 34%, ${gradientColor} 85%)`;
+    console.log(gradientColor);
 };
 
 function getDominantColor(imageData) {
